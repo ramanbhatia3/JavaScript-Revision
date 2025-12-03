@@ -39,3 +39,46 @@ console.log(typeof myFunction); //outputs function but is called object fuunctio
 console.log(typeof id); 
 
 // https://262.ecma-international.org/5.1/index.html#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Memory
+// Stack (Primitve), Heap (Non Primitive)
+
+let myName = "Ramandeep Bhatia";
+let Name = myName;
+console.log(Name);
+
+Name = "Raman";
+console.log(Name);
+
+let userOne = {
+    mail:"raman@google.com"
+}
+
+let userTwo = userOne;
+console.log(userTwo.mail);
+console.log(userOne.mail);
+
+userTwo.mail = "rbhatia@google.com";
+console.log(userTwo.mail);
+console.log(userOne.mail);
+
+
+
+
+
+// +---------------------+            +-----------------------------+
+// |       userTwo       |------------|                             |
+// +---------------------+            | {                           |
+// |       userOne       |------------|    mail: "raman@google.com",|
+// +---------------------+            | }                           |
+// |       myName        |            |                             |
+// +---------------------+            |                             |
+// |        Name         |            +-----------------------------+
+// +---------------------+                           Heap
+// |       myName        |
+// +---------------------+
+//         Stack                               
+
+// Stack -> Copy | Heap -> Reference
