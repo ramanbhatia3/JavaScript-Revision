@@ -66,3 +66,38 @@ let someNumber = 33;
 let convertedString = String(someNumber)
 console.log(typeof convertedString)
 console.log(convertedString)
+
+
+// Operations
+
+let value = 3
+let negvalue = -value
+console.log(value);
+console.log(negvalue);
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2**2)
+// console.log(2%2)
+
+let str1 = "Hello"
+let str2 = "Raman"
+
+// str3 = str1 + str2
+// console.log(str3);
+
+// console.log("1"+2);
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(2+2+"1");
+
+// console.log(+true);
+// console.log(+"");
+
+
+gameCounter = 100;
+gameCounter++;
+
+console.log(gameCounter);
