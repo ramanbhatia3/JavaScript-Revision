@@ -136,3 +136,51 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 console.log(tinderUser.hasOwnProperty('isLogged'));
+
+
+
+
+
+
+
+
+
+
+// object destructuring
+
+const course = {
+    courseName: "JavaScript",
+    price: "999INR",
+    courseInstructor: "Raman Bhatia"
+};
+
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course;
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+
+
+
+
+
+// JSON API
+
+// {
+//     "courseName": "JavaScript",
+//     "price": "999INR",
+//     "courseInstructor": "Raman Bhatia"
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
+// freeapi me
+
+// json formatter
