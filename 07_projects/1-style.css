@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button{
+    border: 1px solid black;
+    padding: 50px;
+}
+
+#grey{
+    background-color: grey;
+}
+
+#white{
+    background-color: white;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#yellow{
+    background-color: yellow;
+}
