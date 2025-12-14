@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h1>Ramandeep Bhatia</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setTimeout(function (){
+    //     console.log("Ramandeep Bhatia");
+        
+    // }, 2000);
+
+
+
+    const Raman = function (){
+        console.log("Ramandeep Bhatia");
+        
+    }
+
+    const changeText = function (){
+        document.querySelector("h1").innerHTML = "JavaScript Revision";
+        
+    }
+
+    // setTimeout(Raman,2000)
+
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+</script>
+</html>
